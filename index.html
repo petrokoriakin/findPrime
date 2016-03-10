@@ -3,8 +3,7 @@
 <head>
   <title>Prime</title>
   <script type="text/javascript">
-  Задача
-
+  //Задача
   //Напишите функцию findPrime, принимающую на вход один аргумент - массив цифр и возвращающую первое 
   //простое число меньше 1 000 000, состоящее только из этих цифр и содержащее все эти цифры, либо false, 
   //если такого числа не существует
@@ -16,9 +15,26 @@
   //   - (число не должно превышать 10000000)
   // - по очереди проверить, является ли каждое из чисел простым
   // - вернуть наименьшее из этих чисел или фолс
+  function isPrime1(n) {
+   if (isNaN(n) || !isFinite(n) || n%1 || n<2) return false; 
+   var m=Math.sqrt(n);
+   for (var i=2;i<=m;i++) if (n%i==0) return false;
+   return true;
+  }
 
   var findPrime = function(arr) {
-    
+    smth = 12;
+    for(var i = 0; i <= arr.length; i++) {
+      console.log(arr[i]);
+    }
+
+    1
+    10
+    100
+    1000
+    10000
+    100000
+
     return smth;
     return false;
   }
